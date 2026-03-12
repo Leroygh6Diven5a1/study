@@ -41,7 +41,7 @@ DEFAULT_SAFETY_SETTINGS = [
     {"category": "HARM_CATEGORY_JAILBREAK", "threshold": "BLOCK_NONE"}
 ]
 
-# Base Models (Cleaned up old previews, added 3.1 series)
+# Base Models (Cleaned up old previews, added 3.1 series with correct -preview suffixes)
 BASE_MODELS = [
     {
         "name": "models/gemini-2.5-pro",
@@ -96,10 +96,10 @@ BASE_MODELS = [
         "topK": 64
     },
     {
-        "name": "models/gemini-3.1-pro",
+        "name": "models/gemini-3.1-pro-preview",
         "version": "001",
-        "displayName": "Gemini 3.1 Pro",
-        "description": "Latest advanced multimodal model (Gemini 3.1 Pro)",
+        "displayName": "Gemini 3.1 Pro Preview",
+        "description": "Latest advanced multimodal model preview (Gemini 3.1 Pro)",
         "inputTokenLimit": 2097152,
         "outputTokenLimit": 65535,
         "supportedGenerationMethods": ["generateContent", "streamGenerateContent"],
@@ -109,10 +109,10 @@ BASE_MODELS = [
         "topK": 64
     },
     {
-        "name": "models/gemini-3.1-flash",
+        "name": "models/gemini-3.1-flash-preview",
         "version": "001",
-        "displayName": "Gemini 3.1 Flash",
-        "description": "Latest fast and efficient multimodal model (Gemini 3.1 Flash)",
+        "displayName": "Gemini 3.1 Flash Preview",
+        "description": "Latest fast and efficient multimodal model preview (Gemini 3.1 Flash)",
         "inputTokenLimit": 1048576,
         "outputTokenLimit": 65535,
         "supportedGenerationMethods": ["generateContent", "streamGenerateContent"],
